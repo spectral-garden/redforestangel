@@ -1,3 +1,40 @@
+@media only screen and (max-width: 600px) {
+  /* reduce the font size for all text */
+  body {
+    width: 100%;
+  }
+
+  /* increase the size of buttons for easier tapping on mobile devices */
+  button {
+    padding: 10px 20px;
+  }
+
+  /* make sure images don't overflow their container */
+  img {
+    max-width: 100%;
+  }
+
+  /* stack navigation items vertically instead of horizontally */
+  nav ul {
+    flex-direction: column;
+  }
+
+  /* hide non-essential elements on small screens */
+  .hide-on-small {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
 body {
     margin: 0;
   }
