@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>a b o u t</title>
+</head>
+<body>
+    <div class="navbar"></div>
+    <canvas id="canvas"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.js"></script>
+    
+    <script src="app3.js"></script>
+    <div>
+
+
+
+
+        <script>
+
+            window.onload = function() {
+              document.getElementById("about").addEventListener("click", function() {
+                window.location.href = "about.html";
+              });
+          
+          
+              document.getElementById("musicButton").addEventListener("click", function() {
+                window.location.href = "music.html";
+              });
+          
+              document.getElementById("utopiaButton").addEventListener("click", function() {
+                window.location.href = "utopia.html";
+              });
+          
+              document.getElementById("supportButton").addEventListener("click", function() {
+                window.location.href = "support.html";
+              });
+            };
+          </script>
+    </body>
+<footer class="footer">
+    <button id="about">about</button>
+    <button id="projectsButton">projects</button>
+    <button id="musicButton">music</button>
+    <button id="utopiaButton">utopia manifesto</button>
+    <button id="supportButton">support</button>
+  </footer>
+</html>

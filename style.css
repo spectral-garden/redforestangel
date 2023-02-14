@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+  }
+canvas {
+    display: block;
+  }
+  /*.navbar {
+    background-color:rgba(0, 0, 0, 0.596);
+    opacity: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    padding: 0 10px;
+    bottom: 0;
+    overflow: hidden;
+  }
+*/
+
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 25%;
+  z-index: 1; /* lower than the z-index of the footer */
+  object-fit: cover;
+}
+
+
+#canvas-container {
+  z-index: 1;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.208);
+    color: rgba(0, 0, 0, 0.116);
+    text-align: center;
+    z-index: 10; /* greater than the z-index of the video */
+  }
+
+
+  #button1, #musicButton, #about, #supportButton{
+    background-color: transparent;
+    color: white;
+    text-shadow: 0 0 5px rgb(150, 34, 165), 0 0 5px rgba(128, 0, 128, 0.288);
+    outline: 9px rgba(128, 0, 128, 0.288);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+}
+
+#about:hover {
+  box-shadow: 0 0 15px rgb(199, 43, 219);
+}
+#musicButton:hover {
+  box-shadow: 0 0 15px rgb(199, 43, 219);
+}
+
+
+#supportButton:hover {
+box-shadow: 0 0 15px rgb(43, 190, 219);
+}
+
+
+
+/*
+video css
+*/
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+}
+.jumbotron video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width:100%;
+  height:100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity:0.5;
+}
+.jumbotron .container {
+  z-index: 2;
+  position: relative;
+}
+
+
+
+
+
+
+  
+
+/*
+#myIframe {
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  background-color: rgba(128, 128, 128, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+*/
