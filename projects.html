@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi1png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi2">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi3.png">
+    <title>p r o j e c t s</title>
+</head>
+<div id="canvas-container" style="position: absolute; top: 0; left: 0;">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.js"></script>
+    <script src="app.js"></script>
+  </div>
+  <div id="text-container" style="position: absolute; top: 400px; left: 70px; color: white; font-size: 24px;">
+    <button id="gitButton">git hub</button>
+  </div>
+
+      
+      <!--Button scripts-->
+      <script>
+      
+        window.onload = function() {
+          document.getElementById("homeButton").addEventListener("click", function() {
+            window.location.href = "index.html";
+          });
+      
+          document.getElementById("musicButton").addEventListener("click", function() {
+            window.location.href = "music.html";
+          });
+      
+          document.getElementById("projectsButton").addEventListener("click", function() {
+                      window.location.href = "projects.html";
+                    });
+      
+      
+          document.getElementById("utopiaButton").addEventListener("click", function() {
+            window.location.href = "utopia.html";
+          });
+      
+          document.getElementById("supportButton").addEventListener("click", function() {
+            window.location.href = "support.html";
+          });
+          };
+      
+      </script>
+      <div>
+     
+      </div>
+      
+      </body>
+      <!--footer/buttons/main navigation-->
+      <footer class="footer">
+        <button id="homeButton">home</button>
+        <button id="aboutButton">about</button>
+        <button id="musicButton">music</button>
+        <button id="utopiaButton">utopia</button>
+        <button id="supportButton">support</button>
+      </footer>
+</body>
+</html>

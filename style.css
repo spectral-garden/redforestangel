@@ -95,8 +95,14 @@ canvas {
     z-index: 10; /* greater than the z-index of the video */
   }
 
+#p{
+  font-size: 10px;
+}
 
-  #button1, #musicButton, #about, #supportButton{
+
+
+
+  #utopiaButton, #greenButton, #projectsButton, #homeButton, #musicButton, #aboutButton, #supportButton{
     background-color: transparent;
     color: white;
     text-shadow: 0 0 5px rgb(150, 34, 165), 0 0 5px rgba(128, 0, 128, 0.288);
@@ -104,28 +110,58 @@ canvas {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 50px;
+    width: 60px;
+    height: 30px;
     margin: auto;
 }
 
-#about:hover {
+
+ #greenButton{
+    background-color: transparent;
+    color: white;
+    text-shadow: 0 0 5px rgb(150, 34, 165), 0 0 5px rgba(128, 0, 128, 0.288);
+    outline: 9px rgba(128, 0, 128, 0.288);
+    display: inline-flex;
+    width: 60px;
+    height: 30px;
+    margin: auto;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.208);
+    text-align: center;
+}
+
+
+#greenButton:hover {
+  box-shadow: 0 0 15px rgb(43, 219, 146);
+}
+
+#homeButton:hover {
+  box-shadow: 0 0 15px rgb(199, 43, 219);
+}
+#aboutButton:hover {
   box-shadow: 0 0 15px rgb(199, 43, 219);
 }
 #musicButton:hover {
   box-shadow: 0 0 15px rgb(199, 43, 219);
 }
 
-
-#supportButton:hover {
-box-shadow: 0 0 15px rgb(43, 190, 219);
+#utopiaButton:hover {
+  box-shadow: 0 0 15px rgb(43, 190, 219);
 }
 
+#supportButton:hover {
+  box-shadow: 0 0 15px rgb(43, 190, 219);
+}
+
+#projectsButton:hover {
+  box-shadow: 0 0 15px rgb(43, 190, 219);
+}
 
 
 /*
 video css
-*/
+
 .jumbotron {
   position: relative;
   overflow: hidden;
@@ -136,39 +172,12 @@ video css
   top: 0;
   width:100%;
   height:100%;
-  /*  object-fit is not supported on IE  */
+  /*  object-fit is not supported on IE 
   object-fit: cover;
   opacity:0.5;
 }
 .jumbotron .container {
   z-index: 2;
   position: relative;
-}
-
-
-
-
-
-
-  
-
-/*
-#myIframe {
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.overlay {
-  background-color: rgba(128, 128, 128, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
 }
 */

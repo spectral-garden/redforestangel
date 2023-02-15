@@ -19,10 +19,6 @@ window.onload = deferVideo;
 
 
 
-
-
-
-
 // Set up the scene
 var scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);

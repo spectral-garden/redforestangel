@@ -5,55 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>u m a d e  i t  h e r e</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favi1png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi2">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi3.png">
+    <title>u a r e h e r e  </title>
   </head>
 <body>
 
-
-  
- <!--<div class="jumbotron jumbotron-fluid">
- </div>  
--->
+<!--Video-->
 <video autoplay muted loop>    
   <source src="landingpage3web.webm" type="video/webm">
 </video>
+
+<!--script links for three js and js page link-->
 <div id="canvas-container" style="position: absolute; top: 0; left: 0;">
-
-<script>
-var scene = new THREE.Scene();
-scene.background = new THREE.Color(0x000000);
-
-// Set up the camera
-var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.z = 10;
-camera.position.y = 2;
-
-// Set up the renderer
-var renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.getElementById("canvas-container").appendChild(renderer.domElement);
-</script>
-</div>
   <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.6/build/dat.gui.min.js"></script>
   <script src="app.js"></script>
-
 </div>
 
-
-<!--<div class="navbar"></div> -->
+<!--Button scripts-->
 <script>
 
   window.onload = function() {
-    document.getElementById("about").addEventListener("click", function() {
+    document.getElementById("aboutButton").addEventListener("click", function() {
       window.location.href = "about.html";
     });
-
 
     document.getElementById("musicButton").addEventListener("click", function() {
       window.location.href = "music.html";
     });
+
+    document.getElementById("projectsButton").addEventListener("click", function() {
+                window.location.href = "projects.html";
+              });
+
 
     document.getElementById("utopiaButton").addEventListener("click", function() {
       window.location.href = "utopia.html";
@@ -62,17 +47,19 @@ document.getElementById("canvas-container").appendChild(renderer.domElement);
     document.getElementById("supportButton").addEventListener("click", function() {
       window.location.href = "support.html";
     });
-  };
+    };
+
 </script>
 
 
 
 </body>
+<!--footer/buttons/main navigation-->
 <footer class="footer">
-  <button id="about">about</button>
+  <button id="aboutButton">about</button>
   <button id="projectsButton">projects</button>
   <button id="musicButton">music</button>
-  <button id="utopiaButton">utopia manifesto</button>
+  <button id="utopiaButton">utopia</button>
   <button id="supportButton">support</button>
 </footer>
 </html>

@@ -1,22 +1,21 @@
 // video js
 function deferVideo() {
 
-  //defer html5 video loading
-$("video source").each(function() {
-  var sourceFile = $(this).attr("data-src");
-  $(this).attr("src", sourceFile);
-  var video = this.parentElement;
-  video.load();
- 
-//video.play();
-});
-
-}
-window.onload = deferVideo;
-
-
-
-const scene = new THREE.Scene();
+    //defer html5 video loading
+  $("video source").each(function() {
+    var sourceFile = $(this).attr("data-src");
+    $(this).attr("src", sourceFile);
+    var video = this.parentElement;
+    video.load();
+   
+  //video.play();
+  });
+  
+  }
+  window.onload = deferVideo;
+  
+  
+  const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 camera.position.z = 5;
 
@@ -75,7 +74,7 @@ function animate() {
 // Set up the text geometry
 var fontLoader = new THREE.FontLoader();
 fontLoader.load('https://cdn.jsdelivr.net/npm/three@0.121.1/examples/fonts/helvetiker_regular.typeface.json', function (font) {
-  var textGeometry = new THREE.TextGeometry("MUSIC", {
+  var textGeometry = new THREE.TextGeometry("SUPPORT", {
     font: font,
     size: 0.5,
     height: 0.1,

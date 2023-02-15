@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi1png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi2">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi3.png">
+    <!--add bootstrap maybe?-->
+    <title>s u p p o r t</title>
+</head>
+<body>
+  <div id="canvas-container" style="position: absolute; top: 0; left: 0;">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.js"></script>
+    <script src="app4.js"></script>
+  </div>
+  <div id="text-container" style="position: absolute; top: 4px; left: 70px; color: white; font-size: 24px;">
+    <h2>support independant art</h2>
+    <p>as a full time retail wage slave, I spend my spare undepressed moments creating, your donations will not be spent on materialist <br>
+    bullshit, but rather my attempt to share my creations, food, financially stability and one day creating a utopia<br>
+    like minds to live without finacial burden and not be forced into the ratrace. Anything you can contribute.
+    </p>
+    <div><button id="greenButton">bandcamp</button><button id="greenButton">donate paypal</button><button id="greenButton">donate crypto</button></div>
+  </div>
+
+
+
+    <script>
+        window.onload = function() {
+
+          document.getElementById("homeButton").addEventListener("click", function() {
+            window.location.href = "index.html";
+          });
+
+          document.getElementById("musicButton").addEventListener("click", function() {
+            window.location.href = "music.html";
+          });
+      
+          document.getElementById("projectsButton").addEventListener("click", function() {
+            window.location.href = "projects.html";
+          });
+    
+
+          document.getElementById("utopiaButton").addEventListener("click", function() {
+            window.location.href = "utopia.html";
+          });
+    
+          document.getElementById("supportButton").addEventListener("click", function() {
+            window.location.href = "support.html";
+          });
+        };
+      </script>
+    
+    
+    
+    
+    </body>
+    <footer class="footer">
+      <button id="homeButton">home</button>
+      <button id="projectsButton">projects</button>
+      <button id="aboutButton">about</button>
+      <button id="musicButton">music</button>
+      <button id="utopiaButton"">utopia</button>
+    
+      
+    </footer>
+
+</html>

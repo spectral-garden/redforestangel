@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi1png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi2">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi3.png">
     <title>m u s i c</title>
 </head>
 <body>
@@ -14,30 +16,10 @@
   </video>
   <div id="canvas-container" style="position: absolute; top: 0; left: 0;">
   
-  <!--<script>
-  var scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x000000);
-  
-  // Set up the camera
-  var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  camera.position.z = 10;
-  camera.position.y = 2;
-  
-  // Set up the renderer
-  var renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  document.getElementById("canvas-container").appendChild(renderer.domElement);
-  </script>
--->
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.js"></script>
  
   <script src="app2.js"></script>
-
+</div>
 
 
 
@@ -47,6 +29,10 @@
         document.getElementById("aboutButton").addEventListener("click", function() {
         window.location.href = "about.html";
       });
+      document.getElementById("homeButton").addEventListener("click", function() {
+        window.location.href = "index.html";
+      });
+  
       document.getElementById("homeButton").addEventListener("click", function() {
         window.location.href = "index.html";
       });
@@ -68,7 +54,7 @@
 <footer class="footer">
     <button id="homeButton">home</button>
     <button id="aboutButton">about</button>
-    <button id="utopiaButton">utopia manifesto</button>
+    <button id="utopiaButton">utopia</button>
     <button id="supportButton">support</button>
   </footer>
 </html>

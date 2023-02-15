@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi1png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi2">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi3.png">
     <title>a b o u t</title>
 </head>
 <body>
@@ -22,8 +24,8 @@
         <script>
 
             window.onload = function() {
-              document.getElementById("about").addEventListener("click", function() {
-                window.location.href = "about.html";
+              document.getElementById("homeButton").addEventListener("click", function() {
+                window.location.href = "index.html";
               });
           
           
@@ -31,6 +33,10 @@
                 window.location.href = "music.html";
               });
           
+              document.getElementById("projectsButton").addEventListener("click", function() {
+                window.location.href = "projects.html";
+              });
+
               document.getElementById("utopiaButton").addEventListener("click", function() {
                 window.location.href = "utopia.html";
               });
@@ -42,10 +48,10 @@
           </script>
     </body>
 <footer class="footer">
-    <button id="about">about</button>
+    <button id="homeButton">home</button>
     <button id="projectsButton">projects</button>
     <button id="musicButton">music</button>
-    <button id="utopiaButton">utopia manifesto</button>
+    <button id="utopiaButton">utopia</button>
     <button id="supportButton">support</button>
   </footer>
 </html>
