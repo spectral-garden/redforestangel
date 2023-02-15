@@ -87,7 +87,7 @@ fontLoader.load('https://cdn.jsdelivr.net/npm/three@0.121.1/examples/fonts/helve
   });
   const textMaterial = new THREE.MeshBasicMaterial({ color: 0xCE6868 });
   var text = new THREE.Mesh(textGeometry, textMaterial);
-  
+  text.position.x = -1;
   text.position.y = -2;
   scene.add(text);
 });

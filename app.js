@@ -67,6 +67,7 @@ fontLoader.load('https://cdn.jsdelivr.net/npm/three@0.121.1/examples/fonts/helve
  
 
 
+ text.position.x = -3;
   text.position.y = -2;
   scene.add(text);
 });
