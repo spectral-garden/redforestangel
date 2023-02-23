@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favi1png">
     <link rel="icon" type="image/png" sizes="32x32" href="favi2">
     <link rel="icon" type="image/png" sizes="16x16" href="favi3.png">
-    <title>u a r e h e r e  </title>
+    <title>u a r e h e r e</title>
   </head>
 <body>
 
@@ -27,6 +27,11 @@
 <script>
 
   window.onload = function() {
+
+    document.getElementById("contactButton").addEventListener("click", function(){
+      window.location.href= "contact.html";
+    });
+
     document.getElementById("aboutButton").addEventListener("click", function() {
       window.location.href = "about.html";
     });
@@ -47,6 +52,10 @@
     document.getElementById("supportButton").addEventListener("click", function() {
       window.location.href = "support.html";
     });
+
+    document.getElementById("showsButton").addEventListener("click", function(){
+      window.location.href = "shows.html";
+    });
     };
 
 </script>
@@ -61,5 +70,7 @@
   <button id="musicButton">music</button>
   <button id="utopiaButton">utopia</button>
   <button id="supportButton">support</button>
+  <button id="contactButton">contact</button>
+  <button id="showsButton">shows</button>
 </footer>
 </html>
