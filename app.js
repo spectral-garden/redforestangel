@@ -19,11 +19,11 @@ window.onload = deferVideo;
 
 
 
-// Set up the scene
+// scene
 var scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
 
-// Set up the camera
+//  camera
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 10;
 camera.position.y = 2;
@@ -33,16 +33,16 @@ var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-// Set up the colors to cycle through
-var colors = [0xff0000, 0x00ff00, 0x0000ff, 0xffff00, 0xff00ff, 0x00ffff];
+// colors to cycle through
+var colors = [0xff0000, 0x00ff00, 0x9900FF];
 
-// Set up the tree of life geometry
-var treeGeometry = new THREE.TorusKnotBufferGeometry(11, 0.1, 100, 9);
+// geometry
+var treeGeometry = new THREE.TorusKnotBufferGeometry(9, 0.03, 9, 30);
 var treeMaterial = new THREE.MeshBasicMaterial({ color: colors[0] });
 var tree = new THREE.Mesh(treeGeometry, treeMaterial);
 scene.add(tree);
 
-// Set up the text geometry
+// text geometry
 var fontLoader = new THREE.FontLoader();
 fontLoader.load('https://cdn.jsdelivr.net/npm/three@0.121.1/examples/fonts/helvetiker_regular.typeface.json', function (font) {
   var textGeometry = new THREE.TextGeometry("RED FOREST ANGEL", {
@@ -58,12 +58,16 @@ fontLoader.load('https://cdn.jsdelivr.net/npm/three@0.121.1/examples/fonts/helve
   var textMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
   var text = new THREE.Mesh(textGeometry, textMaterial);
   
- // Set up the color change interval
+
+// 
+
+
+ // color change interval
  var colorIndex = 0;
  setInterval(function() {
    textMaterial.color.setHex(colors[colorIndex % colors.length]);
    colorIndex++;
- }, 1000);
+ }, 10);
  
 
 
@@ -77,7 +81,7 @@ var currentColorIndex = 0;
 setInterval(function () {
   currentColorIndex = (currentColorIndex + 1) % colors.length;
   treeMaterial.color.setHex(colors[currentColorIndex]);
-}, 5000);
+}, 50);
 
 // Render loop
 function render() {
