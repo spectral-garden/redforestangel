@@ -28,13 +28,6 @@
 
 
 
-
-
-
-
-
-
-
 body {
     margin: 0;
     overflow: hidden;
@@ -42,23 +35,6 @@ body {
 canvas {
     display: block;
   }
-  /*.navbar {
-    background-color:rgba(0, 0, 0, 0.596);
-    opacity: 0;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    display: flex;
-    padding: 0 10px;
-    bottom: 0;
-    overflow: hidden;
-  }
-*/
-
 
 video {
   position: absolute;
@@ -102,10 +78,7 @@ canvas {
   font-size: 10px;
 }
 
-
-
-
-  #utopiaButton, #greenButton, #projectsButton, #homeButton, #musicButton, #aboutButton, #supportButton{
+  #showsButton, #greenButton, #contactButton, #projectsButton, #homeButton, #musicButton, #aboutButton, #supportButton{
     background-color: transparent;
     color: white;
     text-shadow: 0 0 5px rgb(150, 34, 165), 0 0 5px rgba(128, 0, 128, 0.288);
@@ -149,7 +122,7 @@ canvas {
   box-shadow: 0 0 15px rgb(199, 43, 219);
 }
 
-#utopiaButton:hover {
+#showsButton:hover {
   box-shadow: 0 0 15px rgb(43, 190, 219);
 }
 
@@ -160,27 +133,87 @@ canvas {
 #projectsButton:hover {
   box-shadow: 0 0 15px rgb(43, 190, 219);
 }
+#contactButton:hover{
+  box-shadow: 0 0 15px rgb(199, 43, 219);
+}
+
+.contact-form {
+  background-color: #d05b5b;
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin: 50px auto;
+  max-width: 500px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.contact-form form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #cc005c;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contact-form form button:hover {
+  background-color: #68b874;
+}
+
+#status {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
 
-/*
-video css
+.scrollable-box {
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 400px;
+}
 
-.jumbotron {
-  position: relative;
-  overflow: hidden;
+.h2shows{
+  color: rgb(0, 255, 229);
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
-.jumbotron video {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  width:100%;
-  height:100%;
-  /*  object-fit is not supported on IE 
-  object-fit: cover;
-  opacity:0.5;
+
+.scrollable-box p {
+  color: hotpink;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
-.jumbotron .container {
-  z-index: 2;
-  position: relative;
+
+.scrollable-content {
+  font-size: 1.2rem;
 }
-*/
