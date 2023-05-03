@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi3.png">
+    <title>c o n t a c t</title>
+</head>
+<body>
+    <!--script links for three js and js page link-->
+    <div id="canvas-container" style="position: absolute; top: 0; left: 0;">
+      <div class="contact-form">
+        <h2>Contact</h2>
+        <form id="contact" method="post">
+          <input id="nameC" type="text" name="name" placeholder="Name">
+          <input id="emailC" type="email" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div id="status"></div>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.js"></script>
+      <script src="appContact.js"></script>
+      </div>
+  <!--Button scripts-->
+  <script>
+  
+    window.onload = function() {
+
+    document.getElementById("homeButton").addEventListener("click", function(){
+        window.location.href = "index.html";
+    });
+
+      document.getElementById("aboutButton").addEventListener("click", function() {
+        window.location.href = "about.html";
+      });
+  
+      document.getElementById("musicButton").addEventListener("click", function() {
+        window.location.href = "music.html";
+      });
+  
+      document.getElementById("projectsButton").addEventListener("click", function() {
+                  window.location.href = "projects.html";
+      });
+  
+      document.getElementById("supportButton").addEventListener("click", function() {
+        window.location.href = "support.html";
+      });
+      };
+  </script>
+</body>
+  <!--footer/buttons/main navigation-->
+<footer class="footer">
+    <button id="homeButton">home</button>
+    <button id="aboutButton">about</button>
+    <button id="projectsButton">projects</button>
+    <button id="musicButton">music</button>
+    <button id="supportButton">support</button>
+</footer>
+</html>

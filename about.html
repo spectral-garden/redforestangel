@@ -11,15 +11,34 @@
     <title>a b o u t</title>
 </head>
 <body>
-    <div class="navbar"></div>
-    <canvas id="canvas"></canvas>
+
+  
+<!--Video-->
+    <video autoplay muted loop>    
+    <source src="webland66.webm" type="video/webm">
+    </video>
+
+
+<!--    <div class="navbar"> -->
+  <div id="canvas-container" style="position: absolute; top: 0; left: 0;">
+  
+    <div class="glow-box">
+      <h1 class="glow-text">about</h1>
+</div>
+      <div class="scrollable-box">
+        <div class="scrollable-content">
+          <h2 class="h2shows">red forest angel</h2>
+          <p>My design philosophy is centered on experimentation and exploration, and I love to work with materials, colors, and textures in unexpected ways. I am drawn to the unusual and the abstract, and I believe that great design can challenge and inspire people in profound ways.
+
+            Whether I am working on a branding project, a product design, or an interactive installation, I always strive to create designs that are not only visually striking, but also thought-provoking and engaging. I believe that good design should not only be aesthetically pleasing, but should also make people think, feel, and interact with the world around them in new and exciting ways.
+            
+            Thank you for visiting my portfolio, and I hope that my work inspires you to think differently about the world of design!</p>
+      
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.js"></script>
-    
-    <script src="app3.js"></script>
-    <div>
-
-
-
+    <script src="appAbout.js"></script>
+    </div>
 
         <script>
 
@@ -36,14 +55,19 @@
               document.getElementById("projectsButton").addEventListener("click", function() {
                 window.location.href = "projects.html";
               });
-
-              document.getElementById("utopiaButton").addEventListener("click", function() {
-                window.location.href = "utopia.html";
-              });
           
               document.getElementById("supportButton").addEventListener("click", function() {
                 window.location.href = "support.html";
+      
               });
+              document.getElementById("contactButton").addEventListener("click", function(){
+                window.location.href = "contact.html";
+              });
+              
+              document.getElementById("showButton").addEventListener("click", function(){
+                window.location.href = "shows.html";
+              });
+      
             };
           </script>
     </body>
@@ -51,7 +75,8 @@
     <button id="homeButton">home</button>
     <button id="projectsButton">projects</button>
     <button id="musicButton">music</button>
-    <button id="utopiaButton">utopia</button>
+    <button id="showsButton">events</button>
+    <button id="contactButton">contact</button>
     <button id="supportButton">support</button>
   </footer>
 </html>
