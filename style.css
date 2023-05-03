@@ -78,7 +78,7 @@ canvas {
   font-size: 10px;
 }
 
-  #showsButton, #greenButton, #contactButton, #projectsButton, #homeButton, #musicButton, #aboutButton, #supportButton{
+#myButton, #showsButton, #greenButton, #contactButton, #projectsButton, #homeButton, #musicButton, #aboutButton, #supportButton{
     background-color: transparent;
     color: white;
     text-shadow: 0 0 5px rgb(150, 34, 165), 0 0 5px rgba(128, 0, 128, 0.288);
@@ -105,6 +105,10 @@ canvas {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.208);
     text-align: center;
+}
+
+#myButton{
+  box-shadow: 0 0 15px rgb(43, 190, 219);
 }
 
 
@@ -136,9 +140,23 @@ canvas {
 #contactButton:hover{
   box-shadow: 0 0 15px rgb(199, 43, 219);
 }
+.contact-form:hover{
+  box-shadow: 0 0 15px rgb(43, 190, 219);
+}
 
+.contact-form form textarea:hover{
+  box-shadow: 0 0 15px rgb(255, 0, 0);
+}
+
+#nameC:hover{
+  box-shadow: 0 0 15px rgb(255, 0, 0);
+}
+
+#emailC:hover{
+  box-shadow: 0 0 15px rgb(255, 0, 0);
+}
 .contact-form {
-  background-color: #d05b5b;
+  background-color: #ffffff31;
   border-radius: 10px;
   padding: 20px 40px;
   margin: 50px auto;
@@ -147,8 +165,10 @@ canvas {
 
 .contact-form h2 {
   text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
+  color: aliceblue;
 }
 
 .contact-form form input,
@@ -168,14 +188,15 @@ canvas {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #cc005c;
+  background-color: #ff007396;
   color: #fff;
   font-size: 1.2rem;
   cursor: pointer;
 }
 
 .contact-form form button:hover {
-  background-color: #68b874;
+  background-color: #d518ff;
+  box-shadow: 0 0 15px rgb(255, 0, 0);
 }
 
 #status {
@@ -216,4 +237,68 @@ canvas {
 
 .scrollable-content {
   font-size: 1.2rem;
+}
+
+.glow-box {
+  background-color: black;
+  padding: -.5px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff00;
+  width: 50%;
+  margin: 20px auto 0;
+}
+
+
+#text-container{
+  background-color: black;
+  padding: -.5px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff00;
+  width: 50%;
+  margin: 20px auto 0;
+}
+
+.glow-text {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+  font-size: 36px;
+  text-align: center;
+}
+
+
+#myBox {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; 
+  justify-content: center;
+  height: 300px; /* adjust the height as needed */
+  width: 200px; /* adjust the width as needed */
+  padding: 20px; /* add some padding for better readability */
+  box-sizing: border-box; /* include padding and border in element's total width and height */
+  /* other styling for the box */
+}
+
+.show {
+  display: block;
+}
+
+#photo-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#random-photo {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.5;
+}
+
+#photo-container{
+  margin-top: 300px;
+  height: 200px;
+  width: 300;
 }
