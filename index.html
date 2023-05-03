@@ -5,69 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favi1png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favi2">
-    <link rel="icon" type="image/png" sizes="16x16" href="favi3.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi3.png">  
     <title>▌│█║▌║▌║</title>
   </head>
 <body>
+
+
 
 <!--Video-->
 <video autoplay muted loop>    
   <source src="landingpage3web.webm" type="video/webm">
 </video>
 
+
 <!--script links for three js and js page link-->
 <div id="canvas-container" style="position: absolute; top: 0; left: 0;">
   <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="app.js"></script>
+ 
+</div>
+<!-- Navigation menu -->
+<div class="nav-menu">
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="music.html">Music</a>
+  <a href="support.html">Support</a>
+  <a href="contact.html">Contact</a>
+  <a href="shows.html">Shows</a>
 </div>
 
-<!--Button scripts-->
+<!-- Footer/buttons/main navigation -->
+<footer class="footer">
+<button id="myButton">where?</button>
+  <div id="myBox">
+    <!-- contents of the box go here -->
+    <button id="aboutButton">about</button>
+    <button id="projectsButton">projects</button>
+    <button id="musicButton">music</button>
+    <button id="showsButton">events</button>
+    <button id="contactButton">contact</button>
+    <button id="supportButton">support</button>
+  </div>
+</footer>
+
+<!-- Button scripts -->
 <script>
+var button = document.getElementById("myButton");
+var box = document.getElementById("myBox");
+var isBoxOpen = false;
 
-  window.onload = function() {
+button.addEventListener("click", function() {
+  if (isBoxOpen) {
+    box.style.display = "none";
+    button.innerHTML = "now what?"; // change button text when box is closed
+  } else {
+    box.style.display = "block";
+    button.innerHTML = "hide"; // change button text when box is opened
+  }
+  isBoxOpen = !isBoxOpen;
+});
 
-    document.getElementById("contactButton").addEventListener("click", function(){
-      window.location.href= "contact.html";
-    });
+//
+  document.getElementById("contactButton").addEventListener("click", function() {
+    window.location.href = "contact.html";
+  });
+  document.getElementById("aboutButton").addEventListener("click", function() {
+    window.location.href = "about.html";
+  });
+  document.getElementById("musicButton").addEventListener("click", function() {
+    window.location.href = "music.html";
+  });
+  document.getElementById("projectsButton").addEventListener("click", function() {
+    window.location.href = "projects.html";
+  });
+  document.getElementById("supportButton").addEventListener("click", function() {
+    window.location.href = "support.html";
+  });
+  document.getElementById("showsButton").addEventListener("click", function() {
+    window.location.href = "shows.html";
+  });
 
-    document.getElementById("aboutButton").addEventListener("click", function() {
-      window.location.href = "about.html";
-    });
-
-    document.getElementById("musicButton").addEventListener("click", function() {
-      window.location.href = "music.html";
-    });
-
-    document.getElementById("projectsButton").addEventListener("click", function() {
-                window.location.href = "projects.html";
-              });
-
-
-
-
-    document.getElementById("supportButton").addEventListener("click", function() {
-      window.location.href = "support.html";
-    });
-
-    document.getElementById("showsButton").addEventListener("click", function(){
-      window.location.href = "shows.html";
-    });
-    };
 
 </script>
-
-
-
+<script src="timer.js"></script>
 </body>
-<!--footer/buttons/main navigation-->
-<footer class="footer">
-  <button id="aboutButton">about</button>
-  <button id="projectsButton">projects</button>
-  <button id="musicButton">music</button>
-  <button id="supportButton">support</button>
-  <button id="contactButton">contact</button>
-  <button id="showsButton">shows</button>
-</footer>
 </html>
